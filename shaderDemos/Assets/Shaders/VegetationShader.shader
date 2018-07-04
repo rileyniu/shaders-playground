@@ -32,7 +32,7 @@
 			AlphaTest Greater [_AlphaCutOff]
 			SetTexture [_MainTex] {
 				// combine main texture with lighting colors
-				combine primary * texture
+				combine primary * texture, texture
 			}
 		}
 
