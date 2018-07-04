@@ -21,16 +21,38 @@
 	{
         // Shader properties
 		_Color ("Main Color", Color) = (1,1,1,1)
+        _SpecColor ("Highlight", Color) = (1,1,1,1)
+        _Emission ("Emission", Color) = (0,0,0,0)
+        _Shininess ("Shininess", Range (0.01, 1)) = 0.7
 		_MainTex ("Base Texture)", 2D) = "white" {}
         _BlendTex ("Blend Texture", 2D) = "white" {}
 	}
 	SubShader
 	{
-        // Shader code
 		Pass
         {
-            SetTexture[_MainTex]{ combine texture}
-			SetTexture[_BlendTex] {combine texture * previous}
+
+            Material
+            {
+                Diffuse [_Color]
+                Ambient [_Color]
+                Shininess [_Shininess]
+                Specular [_SpecColor]
+                Emission [_Emission]
+            }
+            //开启光照
+            Lighting On
+            //开启独立镜面反射
+            SeparateSpecular On
+            //设置纹理并进行纹理混合
+            SetTexture [_MainTex] 
+            {
+                //use DOUBLE to add extra shininess
+                Combine texture * primary DOUBLE/*, texture * primary*/
+            }
+
+            // blend a second texture
+			//SetTexture[_BlendTex] {combine texture * previous}
 
 		}
 	} 

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: 4800000, guid: 8f2d30948d55e406eba21e6ca03f5f4c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8869fa49017c24478970485cf7d9abea, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BlendTex:
-        m_Texture: {fileID: 2800000, guid: 1ffb7058f7b43489d85341ea62751b68, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -71,12 +71,15 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RimPower: 1
+    - _Shininess: 0.031
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.67946714, g: 0.2991723, b: 0.764151, a: 1}
+    - _Color: {r: 0.21106264, g: 0.015686275, b: 0.8773585, a: 1}
+    - _Emission: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0.24921383, g: 0.11084905, b: 0.5, a: 0.9647059}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
