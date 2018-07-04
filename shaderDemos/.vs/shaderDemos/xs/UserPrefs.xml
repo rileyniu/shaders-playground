@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{FECA21C9-510C-5252-17AC-3DA3327EAAAC}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PostEffectShader.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/AlphaBlendShader.shader">
     <Files>
-      <File FileName="Assets/PostEffectShader.shader" Line="1" Column="1" />
+      <File FileName="Assets/Shaders/BumpMapShader.shader" Line="1" Column="1" />
+      <File FileName="Assets/Shaders/AlphaBlendShader.shader" Line="49" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

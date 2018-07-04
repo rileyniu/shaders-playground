@@ -59,9 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PostEffectScript.cs" />
-    <None Include="Assets\PostEffectShader.shader" />
-    <None Include="Assets\TextShader.shader" />
+    <Compile Include="Assets\Scripts\PostEffectScript.cs" />
+    <None Include="Assets\Shaders\BumpMapShader.shader" />
+    <None Include="Assets\Shaders\PostEffectShader.shader" />
+    <None Include="Assets\Shaders\TextShader.shader" />
+    <None Include="Assets\Shaders\AlphaBlendShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/rileyniu/Documents/GitHub/shaders-playground/shaderDemos/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
