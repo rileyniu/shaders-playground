@@ -60,10 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PostEffectScript.cs" />
-    <None Include="Assets\Shaders\BumpMapShader.shader" />
-    <None Include="Assets\Shaders\PostEffectShader.shader" />
-    <None Include="Assets\Shaders\TextShader.shader" />
-    <None Include="Assets\Shaders\AlphaBlendShader.shader" />
+    <None Include="Assets\Shaders\fixedFunctionShaders\AlphaBlendShader.shader" />
+    <None Include="Assets\Shaders\vertexFragShaders\BlendShaders.shader" />
+    <None Include="Assets\Shaders\surfaceShaders\BumpMapShader.shader" />
+    <None Include="Assets\Shaders\vertexFragShaders\TextShader.shader" />
+    <None Include="Assets\Shaders\vertexFragShaders\PostEffectShader.shader" />
+    <None Include="Assets\Shaders\fixedFunctionShaders\VegetationShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/rileyniu/Documents/GitHub/shaders-playground/shaderDemos/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -301,7 +303,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
-    <None Include="Assets\Shaders\VegetationShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
